@@ -1,0 +1,401 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI 学习记录 · 个人简历</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <div class="bg-grid"></div>
+
+  <main class="page">
+    <nav class="nav card reveal" style="--delay: 0ms;">
+      <a href="#hero">名片</a>
+      <a href="#card-1">卡片1</a>
+      <a href="#card-2">卡片2</a>
+      <a href="#card-3">卡片3</a>
+      <a href="#showcase">成果展示</a>
+      <a href="#assistant">AI问答</a>
+    </nav>
+
+    <header id="hero" class="hero card reveal" style="--delay: 0ms;">
+      <div class="hero-media">
+        <div class="avatar-frame">
+          <img src="haiyiai-2026-01-07-145222_image.jpg" alt="Q版形象" />
+        </div>
+        <div class="badge">个人名片</div>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">AI 学习记录</p>
+        <h1>教学卡片整理与成果展示</h1>
+        <p class="subhead">
+          聚焦学习准备、工具认知、提示词工程与创作实践的阶段性总结。
+        </p>
+        <div class="chip-row">
+          <span class="chip">学习准备</span>
+          <span class="chip">提示词工程</span>
+          <span class="chip">文生图实践</span>
+        </div>
+      </div>
+    </header>
+
+    <section id="card-1" class="card reveal" style="--delay: 120ms;">
+      <div class="section-title">
+        <h2>教学卡片 1</h2>
+        <span>AI 学习前期准备工作</span>
+      </div>
+      <ul class="list">
+        <li>任务卡片已阅读。</li>
+        <li>
+          找到合适的梯子，计划办理国内 VISA 卡；国内卡无法为 ChatGPT 充值，
+          如需代充将寻找正规代充网站。Gemini 免费一年因 Google 账号问题申请失败，
+          暂不考虑 Gemini，先使用 ChatGPT。
+        </li>
+        <li>困难已解决。</li>
+      </ul>
+    </section>
+
+    <section id="card-2" class="card reveal" style="--delay: 220ms;">
+      <div class="section-title">
+        <h2>教学卡片 2</h2>
+        <span>工具认知与学习方式</span>
+      </div>
+      <ul class="list">
+        <li>任务卡片已阅读。</li>
+        <li>
+          了解主流模型与工具：
+          <div class="tool-grid">
+            <a class="tool-card" href="https://www.deepseek.com" target="_blank" rel="noreferrer">
+              <span>DeepSeek</span>
+              <div class="tool-pop">深度求索推出的高性能对话模型。</div>
+            </a>
+            <a class="tool-card" href="https://gemini.google.com" target="_blank" rel="noreferrer">
+              <span>Gemini</span>
+              <div class="tool-pop">Google 推出的多模态 AI 模型。</div>
+            </a>
+            <a class="tool-card" href="https://www.anthropic.com" target="_blank" rel="noreferrer">
+              <span>Claude</span>
+              <div class="tool-pop">Anthropic 出品，长上下文与安全性著称。</div>
+            </a>
+            <a class="tool-card" href="https://tongyi.aliyun.com" target="_blank" rel="noreferrer">
+              <span>通义千问</span>
+              <div class="tool-pop">阿里云推出的通用大模型助手。</div>
+            </a>
+            <a class="tool-card" href="https://kimi.moonshot.cn" target="_blank" rel="noreferrer">
+              <span>Kimi Chat</span>
+              <div class="tool-pop">月之暗面出品，支持超长文本处理。</div>
+            </a>
+            <a class="tool-card" href="https://www.midjourney.com" target="_blank" rel="noreferrer">
+              <span>Midjourney</span>
+              <div class="tool-pop">顶尖的提示词驱动艺术生成工具。</div>
+            </a>
+            <a class="tool-card" href="https://openai.com/sora" target="_blank" rel="noreferrer">
+              <span>Sora</span>
+              <div class="tool-pop">OpenAI 开发的文生视频模型。</div>
+            </a>
+            <a class="tool-card" href="https://github.com/features/copilot" target="_blank" rel="noreferrer">
+              <span>GitHub Copilot</span>
+              <div class="tool-pop">GitHub 与 OpenAI 联合开发的代码补全工具。</div>
+            </a>
+            <a class="tool-card" href="https://suno.com" target="_blank" rel="noreferrer">
+              <span>Suno</span>
+              <div class="tool-pop">领先的 AI 音乐生成工具。</div>
+            </a>
+            <a class="tool-card" href="https://www.coze.com" target="_blank" rel="noreferrer">
+              <span>扣子/Coze</span>
+              <div class="tool-pop">字节跳动推出的 AI Bot 开发平台。</div>
+            </a>
+          </div>
+        </li>
+        <li>
+          在 B 站观看吴恩达教授提示词工程视频，初步了解提示词工程；
+          参考秋之2046的提示词万能公式，对提示词写法形成概念；
+          浏览提示词网站：snackprompt.com、publicprompts.art。
+        </li>
+        <li>
+          了解 Markdown 与 Json：
+          Markdown 用于内容呈现（标题、列表、链接、代码块等）；
+          Json 为数据交换格式（键值对、严格括号嵌套、逗号分隔）。
+        </li>
+        <li>
+          学习使用 Notion，计划将学习与生活笔记逐步迁移。
+        </li>
+      </ul>
+    </section>
+
+    <section id="card-3" class="card reveal" style="--delay: 320ms;">
+      <div class="section-title">
+        <h2>教学卡片 3</h2>
+        <span>创作实践与提示词总结</span>
+      </div>
+      <ul class="list">
+        <li>任务卡片已阅读。</li>
+        <li>使用即梦生成赛博朋克风格图片。</li>
+        <li>
+          文生图提示词需确定图片风格、画面元素、人物动作与分镜角度；
+          但提示词过于细致时，生成结果可能与预期偏差更大。
+        </li>
+      </ul>
+    </section>
+
+    <section id="showcase" class="card reveal" style="--delay: 360ms;">
+      <div class="section-title">
+        <h2>成果展示</h2>
+        <span>作品预览</span>
+      </div>
+      <div class="showcase">
+        <img src="海贼王.png" alt="成果展示 - 海贼王" />
+        <video controls preload="metadata">
+          <source src="jimeng-2026-01-07-3998-使用素材库中同款 Q 版男孩，场景同候机厅，男孩突然眼睛亮起来，手指向头顶的航班....mp4" type="video/mp4" />
+          浏览器不支持视频播放。
+        </video>
+      </div>
+    </section>
+
+    <section id="assistant" class="card reveal" style="--delay: 460ms;">
+      <div class="section-title">
+        <h2>AI 问答助手</h2>
+        <span>已内置教学卡片 1-3 的知识库</span>
+      </div>
+      <div class="assistant">
+        <div class="assistant-log" id="assistantLog">
+          <div class="assistant-msg bot">
+            你好，我已存储教学卡片 1-3 的内容。输入问题，我会基于这些学习内容进行回答。
+          </div>
+        </div>
+        <div class="assistant-actions">
+          <button class="chip-btn" type="button" data-q="主流AI工具有哪些？">主流AI工具有哪些？</button>
+          <button class="chip-btn" type="button" data-q="提示词工程需要注意什么？">提示词工程需要注意什么？</button>
+          <button class="chip-btn" type="button" data-q="你学到的前期准备有哪些？">你学到的前期准备有哪些？</button>
+        </div>
+        <form class="assistant-input" id="assistantForm">
+          <input type="text" id="assistantQuery" placeholder="输入问题，例如：Markdown 和 Json 的区别？" />
+          <button type="submit">发送</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <button class="to-top" type="button" aria-label="返回顶部">↑</button>
+
+  <script>
+    const topButton = document.querySelector(".to-top");
+    const navLinks = Array.from(document.querySelectorAll(".nav a"));
+    const sections = navLinks
+      .map((link) => document.querySelector(link.getAttribute("href")))
+      .filter(Boolean);
+
+    const setActive = (id) => {
+      navLinks.forEach((link) => {
+        const isActive = link.getAttribute("href") === `#${id}`;
+        link.classList.toggle("active", isActive);
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-25% 0px -55% 0px", threshold: 0.2 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    const updateActiveByScroll = () => {
+      const marker = window.scrollY + window.innerHeight * 0.35;
+      let current = sections[0];
+
+      sections.forEach((section) => {
+        if (section.offsetTop <= marker) {
+          current = section;
+        }
+      });
+
+      if (current) {
+        setActive(current.id);
+      }
+    };
+
+    window.addEventListener("scroll", () => {
+      const show = window.scrollY > 240;
+      topButton.classList.toggle("visible", show);
+      updateActiveByScroll();
+    });
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        const id = link.getAttribute("href").slice(1);
+        setActive(id);
+      });
+    });
+
+    topButton.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    if (sections.length) {
+      setActive(sections[0].id);
+    }
+
+    const knowledge = [
+      {
+        keywords: ["准备", "前期", "visa", "卡", "充值", "chatgpt", "gemini"],
+        answer:
+          "前期准备包括：阅读任务卡片；处理网络与支付问题（国内卡无法直接为 ChatGPT 充值，必要时找正规代充）；Gemini 免费一年因账号问题未申请成功，暂时先用 ChatGPT；相关困难已解决。",
+      },
+      {
+        keywords: ["模型", "工具", "有哪些", "主流", "ai", "平台"],
+        answer:
+          "已了解的主流模型与工具包括：DeepSeek、Gemini、Claude、通义千问、Kimi Chat、Midjourney、Sora、GitHub Copilot、Suno、扣子/Coze。",
+      },
+      {
+        keywords: ["提示词", "工程", "prompt", "写法"],
+        answer:
+          "提示词工程要点：先明确风格、画面元素、人物动作与分镜角度；过度细化可能导致结果偏离预期。学习上参考了吴恩达与“提示词万能公式”的思路，并浏览过提示词网站。",
+      },
+      {
+        keywords: ["网站", "snackprompt", "publicprompts"],
+        answer:
+          "参考过提示词网站：snackprompt.com 与 publicprompts.art。",
+      },
+      {
+        keywords: ["markdown", "md"],
+        answer:
+          "Markdown 是内容呈现的标记语言，常用标题、列表、链接、代码块等语法来组织文本。",
+      },
+      {
+        keywords: ["json"],
+        answer:
+          "Json 是数据交换格式，使用键值对结构，括号嵌套严格，逗号分隔。",
+      },
+      {
+        keywords: ["notion"],
+        answer:
+          "学习了 Notion，计划将学习与生活笔记逐步迁移到该工具中。",
+      },
+      {
+        keywords: ["赛博朋克", "即梦", "图片", "文生图"],
+        answer:
+          "实践内容：使用即梦生成赛博朋克风格图片，并总结文生图提示词的构成与细节权衡。",
+      },
+    ];
+
+    const assistantLog = document.getElementById("assistantLog");
+    const assistantForm = document.getElementById("assistantForm");
+    const assistantQuery = document.getElementById("assistantQuery");
+
+    const appendMessage = (text, role) => {
+      const div = document.createElement("div");
+      div.className = `assistant-msg ${role}`;
+      div.textContent = text;
+      if (role === "bot") {
+        const copy = document.createElement("button");
+        copy.type = "button";
+        copy.className = "copy-btn";
+        copy.textContent = "复制";
+        copy.addEventListener("click", () => {
+          navigator.clipboard.writeText(text).then(() => {
+            copy.textContent = "已复制";
+            setTimeout(() => {
+              copy.textContent = "复制";
+            }, 1200);
+          });
+        });
+        div.appendChild(copy);
+      }
+      assistantLog.appendChild(div);
+      assistantLog.scrollTop = assistantLog.scrollHeight;
+    };
+
+    const appendTyping = (text) => {
+      const div = document.createElement("div");
+      div.className = "assistant-msg bot typing";
+      const span = document.createElement("span");
+      div.appendChild(span);
+      const copy = document.createElement("button");
+      copy.type = "button";
+      copy.className = "copy-btn";
+      copy.textContent = "复制";
+      copy.disabled = true;
+      div.appendChild(copy);
+      assistantLog.appendChild(div);
+      assistantLog.scrollTop = assistantLog.scrollHeight;
+
+      let index = 0;
+      const step = () => {
+        span.textContent = text.slice(0, index);
+        index += 1;
+        assistantLog.scrollTop = assistantLog.scrollHeight;
+        if (index <= text.length) {
+          setTimeout(step, 18);
+        } else {
+          div.classList.remove("typing");
+          copy.disabled = false;
+          copy.addEventListener("click", () => {
+            navigator.clipboard.writeText(text).then(() => {
+              copy.textContent = "已复制";
+              setTimeout(() => {
+                copy.textContent = "复制";
+              }, 1200);
+            });
+          });
+        }
+      };
+
+      step();
+    };
+
+    const appendLoading = () => {
+      const div = document.createElement("div");
+      div.className = "assistant-msg bot loading";
+      div.innerHTML = "<span></span><span></span><span></span>";
+      assistantLog.appendChild(div);
+      assistantLog.scrollTop = assistantLog.scrollHeight;
+      return div;
+    };
+
+    const answerFromKnowledge = (query) => {
+      const lower = query.toLowerCase();
+      const hit = knowledge.find((item) =>
+        item.keywords.some((key) => lower.includes(key))
+      );
+      return (
+        (hit && hit.answer) ||
+        "我只能基于教学卡片 1-3 的内容回答。可以问我：前期准备、主流工具、提示词工程、Markdown/Json、Notion、文生图实践等。"
+      );
+    };
+
+    assistantForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const query = assistantQuery.value.trim();
+      if (!query) return;
+      appendMessage(query, "user");
+      const loader = appendLoading();
+      setTimeout(() => {
+        loader.remove();
+        appendTyping(answerFromKnowledge(query));
+      }, 500);
+      assistantQuery.value = "";
+    });
+
+    document.querySelectorAll(".chip-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const query = btn.dataset.q;
+        appendMessage(query, "user");
+        const loader = appendLoading();
+        setTimeout(() => {
+          loader.remove();
+          appendTyping(answerFromKnowledge(query));
+        }, 500);
+      });
+    });
+  </script>
+</body>
+</html>
