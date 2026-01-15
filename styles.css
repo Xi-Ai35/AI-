@@ -315,6 +315,171 @@ body {
   transform: translateY(0);
 }
 
+.lesson-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.lesson-card {
+  position: relative;
+  padding: 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 20px rgba(20, 20, 20, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lesson-thumb {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 14px;
+}
+
+.lesson-card h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.lesson-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.lesson-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 26px rgba(20, 20, 20, 0.12);
+  z-index: 2;
+}
+
+.lesson-detail {
+  display: none;
+}
+
+.detail-btn {
+  margin-top: 14px;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #1b9aaa, #f08a24);
+  color: #fff;
+  cursor: pointer;
+}
+
+.lesson-block + .lesson-block {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.lesson-block strong {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 6px;
+}
+
+.lesson-block p {
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.modal-body .tool-grid {
+  margin-top: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.modal-body .tool-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 12px;
+}
+
+.modal-body .tool-pop {
+  background: #0b0b0b;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.55);
+}
+
+.modal-card {
+  position: relative;
+  z-index: 11;
+  width: min(680px, 90vw);
+  max-height: 80vh;
+  background: #111;
+  color: #fff;
+  border-radius: 18px;
+  padding: 18px 20px 20px;
+  display: grid;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.modal-close {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modal-body {
+  overflow-y: auto;
+  display: grid;
+  gap: 12px;
+}
+
+.modal-body .lesson-block p {
+  color: #fff;
+}
+
+.modal-body .tool-grid {
+  margin-top: 8px;
+}
+
 .showcase {
   display: grid;
   gap: 12px;
@@ -524,6 +689,10 @@ body {
   .avatar-frame {
     width: 170px;
     height: 170px;
+  }
+
+  .lesson-row {
+    grid-template-columns: 1fr;
   }
 }
 
